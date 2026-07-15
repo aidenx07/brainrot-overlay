@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Brainrot Control Panel</title>
+<style>
+body {
+    background:#111;
+    color:white;
+    font-family:Arial;
+    padding:20px;
+}
+
+input {
+    display:block;
+    margin:10px 0;
+    padding:10px;
+    width:250px;
+    font-size:18px;
+}
+
+button {
+    padding:12px;
+    margin:5px;
+    font-size:18px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🧠 Brainrot Auction Controls</h1>
+
+<label>Item Name</label>
+<input id="item" value="Secret Brainrot">
+
+<label>Bid</label>
+<input id="bid" value="0">
+
+<label>Bidder</label>
+<input id="bidder" value="Nobody">
+
+<label>Timer</label>
+<input id="timer" value="30">
+
+<button onclick="send()">UPDATE</button>
+
+<br>
+
+<button onclick="status('🔥 GOING ONCE!')">GOING ONCE</button>
+<button onclick="status('⚠️ GOING TWICE!')">GOING TWICE</button>
+<button onclick="status('✅ SOLD!')">SOLD</button>
+<button onclick="reset()">RESET</button>
+
+
+<script>
+function send(){
+    alert("Control saved! (Next step connects it to your overlay)");
+}
+
+function status(x){
+    alert(x);
+}
+
+function reset(){
+    document.getElementById("bid").value = 0;
+    document.getElementById("bidder").value = "Nobody";
+}
+</script>
+
+</body>
+</html>
