@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Brainrot Auction Overlay</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="auction-box">
+    <div class="title">🧠 BRAINROT AUCTION 🧠</div>
+
+    <div class="item">
+        ITEM: <b id="item">Secret Brainrot</b>
+    </div>
+
+    <div class="bid">
+        💰 BID: $<span id="bid">0</span>
+    </div>
+
+    <div class="buyer">
+        👤 BIDDER: <span id="buyer">Nobody</span>
+    </div>
+
+    <div class="timer">
+        ⏱ <span id="time">30</span>
+    </div>
+
+    <div id="status">
+        WAITING FOR BIDS...
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
